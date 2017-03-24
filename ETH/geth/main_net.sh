@@ -9,4 +9,4 @@ if [ ! -f ~/.primaryaccount ]; then
   geth  --password ~/.accountpassword account new > ~/.primaryaccount
 fi
 
-geth --fast --nat "any"  --rpc --rpcapi eth,net,web3,personal,admin,miner --rpcaddr "0.0.0.0" --rpccorsdomain "*" --targetgaslimit 1710647284
+geth --fast --nat "any" --maxpeers 100 --rpc --rpcapi eth,net,web3,personal,admin,miner --rpcaddr "0.0.0.0" --rpccorsdomain "*" --targetgaslimit 1710647284
