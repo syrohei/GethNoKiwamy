@@ -9,4 +9,4 @@ if [ ! -f ~/.primaryaccount ]; then
   geth  --password ~/.accountpassword account new > ~/.primaryaccount
 fi
 
-geth --fast  --verbosity 5 --nat "any" --maxpeers 100 --rpc --rpcapi eth,net,web3,personal,admin,miner --rpcaddr "localhost" --rpccorsdomain "*" 
+geth --fast  --verbosity 5 --nat "any" --maxpeers 100 --rpc --rpcapi eth,net,web3,personal,admin,miner  --rpccorsdomain "*" 
